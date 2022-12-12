@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> INDIAN RAILWAY RESERVATION SYSTEM  </title>
+  <link rel="stylesheet" href="./style.css">
+<script src="javascript.js"></script>
+
+
+</head>
+<style>
+::placeholder {
+  color: white;
+  font-size: 1.8em;
+  opacity: 1; /* Firefox */
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color:black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 80px;
+
+}
+</style>
+<body><marquee width="100%"behavior="alternate"><h1 style="color:#0096FF    ;padding-left:300px;padding-right:300px;"><u>INDIAN RAILWAY RESERVATION SYSTEM </u></h1></marquee>
+<a class="navbar-brand" href="Mainpage.html">
+      
+            <img src="logo.png" style="margin-left:10px;margin-bottom:292px;"  class="img-fluid">
+</a>
+<nav>
+<a href="Mainpage.html" style="padding-left:15px;padding-right:50px;">Home</a> |
+<a href="https://www.ecatering.irctc.co.in/" style="padding-left:50px;padding-right:50px;">Meals</a> |
+<a href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=&category=" style="padding-left:50px;padding-right:50px;">Holiday Package</a> |
+<a href="https://www.irctctourism.com/charter" style="padding-left:50px;padding-right:50px;">Charter train</a> |
+<a href="https://www.irctctourism.com/wheelchair" style="padding-left:50px;padding-right:50px;">Service's </a>
+</nav>
+<div class="slideshow-container">
+<div class="mySlides fade"><img src="c.jpeg" style="width:100%"></div>
+<div class="mySlides fade"><img src="b.jpeg" style="width:100%"></div>
+<div class="mySlides fade"><img src="a.jpeg" style="width:100%"></div>
+<div class="mySlides fade"><img src="d.jpeg" style="width:100%"></div>
+<div class="mySlides fade"><img src="e.jpeg" style="width:100%"></div>
+<div class="mySlides fade"><img src="g.jpeg" style="width:100%"></div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+ <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<!-- partial:index.partial.html -->
+<div class="login-box">
+<h2>BOOK TICKET</h2>
+  <form >
+    <div class="user-box">
+      <form:>
+		<label>       </label><br>
+		<input type="text" placeholder ="FROM"><br><br>
+		<label>       </label><br>
+		<input type="text" placeholder ="To"> <br>
+		<label>       </label><br>
+		<input type="date" placeholder ="DD/MM/YYYY"><br>
+		<label>       </label><br><br>
+			<select name="     ">
+			<option value="ALL CLASSES">ALL CLASSES</option>
+			<option value="SLEEPER CLASS(SL)">SLEEPER CLASS(SL)</option>
+			<option value="AC 3-TIER(3A)">AC 3-TIER(3A)</option>
+			<option value="AC 2-TIER(2A)">AC 2TIER(2A)</option>
+			<option value="FIRST CLASS(1A)">FIRST CLASS(1A)</option>
+		</select>
+		<label>       </label>
+		<br><br>
+
+</form>
+    </div>
+<a  style="font-size:3vw"  href="trains.jpg" onclick="validate();" >Search </a>
+  </form>
+</div>
+<img style="margin-left: 10px;border: 4px solid  black;" src="packages.jpg" alt="Girl in a jacket" width="1200" height="600"></br></br></br>
+<img style="margin-left: 10px;border: 4px solid  black;" src="holidays.jpg" alt="Girl in a jacket" width="1200" height="600"></br></br></br>
+<video style="margin-left: 10px;border: 4px solid  black;" height="600" width="1200" autoplay="" loop="" muted="" controls="">
+  <source src="video.mp4" type="video/mp4">
+</video>
+<!-- partial -->
+<ol style="margin-left: 50px;  width: 250px;
+  border: 4px solid blue;
+  padding: 50px;
+  margin-left: 0px;">
+
+                 
+<ul><b><u style="color:#0096FF;">IRCTC TRAIN TICKET REFUND RULES<u></b></ul><br>
+<marquee scrollamount="1"direction="up"><li style="color:#0096FF;">1. Confirmed Ticket Cancellation.</li><br>
+<li>2. Cancellation Charges for RAC or Waitlisted Tickets.</li><br>
+<li>3. Train Diverted.</li><br>
+<li>4. Cancellation of Train.</li><marquee></ol><br><br>
+<br></ul>
+<h1 style="color:orange;"> THANK YOU FOR VISITING </h1>
+</body>
+</html>
